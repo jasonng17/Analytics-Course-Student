@@ -28,7 +28,7 @@ To get started with your development environment, first install [Anaconda](https
 
 Once done, clone this repository into your machine with:
 ```
-git clone https://nothing1strue@bitbucket.org/nothing1strue/analytics-course.git
+https://github.com/danqiye1/analytics-course-student.git
 ```
 
 Finally you can install the required packages for each assignment by navigating into the assignment folder and run the following command:

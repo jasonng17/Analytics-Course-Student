@@ -28,12 +28,17 @@ To get started with your development environment, first install [Anaconda](https
 
 Once done, clone this repository into your machine with:
 ```
-https://github.com/danqiye1/analytics-course-student.git
+git clone https://github.com/danqiye1/analytics-course-student.git
 ```
 
 Finally you can install the required packages for each assignment by navigating into the assignment folder and run the following command:
 ```
 pip install -r requirements.txt
+```
+
+We periodically update this folder as the course progress each week, so be sure to execute the following command to update your folder in your machine:
+```
+git pull
 ```
 
 ---

@@ -49,3 +49,7 @@ If you are stuck, or have any questions, you may use the [Piazza](https://piazza
 
 If you have not received an invitation from your instructor, please request an invitation email to the Piazza course page.
 
+## Submission
+
+All homework should be submitted to the instructor's email in order to facilitate feedback. For details on submission, please refer to the 
+[Piazza](https://piazza.com/class/jiodg8ia4l5l4) page. Homework is due on the Friday of each week.

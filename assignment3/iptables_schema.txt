@@ -1,0 +1,30 @@
+Jul 22 20:43:22 fw kernel: iptables denied: IN=eth2 OUT= MAC=xxx SRC=srcip DST=dstip LEN=40 TOS=0x00 PREC=0x00 TTL=52 ID=21125 PROTO=TCP SPT=5653 DPT=3513 WINDOW=1400 RES=0x00 ACK URGP=0 
+
+Jul 22 20:43:22 = timestamp
+fw = hostname of firewall
+kernel = default label before start of log message
+iptables denied = reason of log
+
+IN = Input interface
+OUT = Output interface
+MAC = Ethernet hardware address (aka MAC address)
+SRC = Source IP address
+DST = Destination IP address
+LEN = Packet length
+TOS = Type of Service (for packet prioritization)
+PREC = Precedent bits
+TTL = Time to Live
+ID = Packet identifier
+PROTO = Protocol (eg. TCP, UDP)
+SPT = Source port
+DPT = Destination port
+WINDOW = Size of TCP window
+RES = Reserved bits
+ACK = Acknowledge bit set
+URGP = Urgent packet
+DF = Fragment Flags. Can have "CE" (congestion), "DF" (don't fragment), or "MF" (more fragments are coming)
+CODE = <dunno but we see only 0 or NAN values>
+PHYSIN = Physical interface (values of eth0, eth1 and NAN)
+PHYSOUT = Physical interface (values of eth0, eth1 and NAN)
+SEQ = TCP Sequence number
+TYPE = Protocol type number (e.g. 8 is ICMP)

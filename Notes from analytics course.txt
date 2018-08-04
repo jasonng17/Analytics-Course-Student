@@ -1,0 +1,89 @@
+###############################
+# Notes from Analytics Course #
+###############################
+
+1. open file
+Character   Meaning
+'r'     open for reading (default)
+'w'     open for writing, truncating the file first
+'x'     open for exclusive creation, failing if the file already exists
+'a'     open for writing, appending to the end of the file if it exists
+'b'     binary mode
+'t'     text mode (default)
+'+'     open a disk file for updating (reading and writing)
+'U'     universal newlines mode (deprecated)
+
+2. Regex
+Ref: https://developers.google.com/edu/python/regular-expressions
+
+(a) The "group" feature of a regular expression allows you to pick out parts of the matching text.
+	- match.group() will match the entire string	
+	- match.group(1) is the match text corresponding to the parenthesis
+
+(b) Square brackets can be used to indicate a set of chars, so [abc] matches 'a' or 'b' or 'c'.
+
+(c) Square-brackets have special features
+	- You can also use a dash to indicate a range, so [a-z] matches all lowercase letters. 
+	- To use a dash without indicating a range, put the dash last, e.g. [abc-]. 
+	- An up-hat (^) at the start of a square-bracket set inverts it, so [^ab] means any char except 'a' or 'b'.
+
+For example:
+Feb  1 00:00:02 bridge kernel: INBOUND TCP: IN=br0 PHYSIN=eth0 OUT=br0 PHYSOUT=eth1 SRC=192.150.249.87 DST=11.11.11.84 LEN=40 TOS=0x00 PREC=0x00 TTL=110 ID=12973 PROTO=TCP SPT=220 DPT=6129 WINDOW=16384 RES=0x00 SYN URGP=0 
+
+Pattern:
+> pair_re = re.compile(r'([^ ]+)=([^ ]+)')
+
+Match: All tokens
+> pair_re.findall(line)
+
+[('IN', 'br0'), ('PHYSIN', 'eth0'), ('OUT', 'br0'), ('PHYSOUT', 'eth1'), ('SRC', '192.150.249.87'), ('DST', '11.11.11.84'), ('LEN', '40'), ('TOS', '0x00'), ('PREC', '0x00'), ('TTL', '110'), ('ID', '12973'), ('PROTO', 'TCP'), ('SPT', '220'), ('DPT', '6129'), ('WINDOW', '16384'), ('RES', '0x00'), ('URGP', '0')]
+
+(d) re.search() will find the first match for a pattern. findall() finds *all* the matches and returns them as a list of strings, with each string representing one match.
+
+3. Splat operator (*) to combine strings
+
+The splat operator can be used to unpack a list and send the list items as argument to os.path.join() to combine the strings in a list
+
+foo = ['a','b','c']
+print(''.join(('', *foo)))	#abc
+print(os.path.join(*foo))	#a/b/c
+
+4. Numpy reshape
+Shape dimension can be -1. In this case, the value is inferred from the length of the array and remaining dimensions. It simply means that it is an unknown dimension and we want numpy to figure it out
+
+For example
+reshape(45,1) will be the same as reshape(-1,1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

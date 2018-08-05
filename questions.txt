@@ -8,3 +8,10 @@
 
 3. I find it hard to understand concept of EVT and the implementation code. Can you give a run-through?
 
+################
+# Assignment 2 #
+################
+
+1. For computing entropy, why do you need to convert to float? Python seem to does it automatically already.
+
+

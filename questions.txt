@@ -1,0 +1,10 @@
+################
+# Assignment 3 #
+################
+
+1. Where in the literature did you find the formula for regularising the z-score? Doing google search only returns me the standard formula. Is the concept always about tuning the variance?
+
+2. What are other common types of distributions that we should try? Have you encountered any cyber analytics related examples where it does not make sense to use normal distribution?
+
+3. I find it hard to understand concept of EVT and the implementation code. Can you give a run-through?
+

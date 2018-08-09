@@ -12,6 +12,6 @@
 # Assignment 2 #
 ################
 
-1. For computing entropy, why do you need to convert to float? Python seem to does it automatically already.
+1. For computing n-grams, why are we multiplying the counts with the term-document matrix? Shouldn't we be using conditional probabilities (i.e. Maximum Likelihood) to compute?
 
-
+2. 
